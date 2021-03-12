@@ -1,0 +1,8 @@
+common-ip: 192.168.0.105
+#common-ip: 192.168.9.28
+
+
+rabbitmq-host: ${common-ip}
+
+
+nacos-addr: ${common-ip}:8848

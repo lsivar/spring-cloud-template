@@ -1,0 +1,19 @@
+server:
+  port: 8001
+spring:
+  application:
+    name: mvc-server
+  cloud:
+    nacos:
+      discovery:
+        server-addr: ${nacos-addr}
+  rabbitmq:
+    host: ${rabbitmq-host}
+    port: 5672
+    username: guest
+    password: guest
+    virtual-host: /test-mq
+    publisher-confirm-type: correlated
+
+  profiles:
+    include: conf

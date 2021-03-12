@@ -1,0 +1,11 @@
+server:
+  port: 9001
+spring:
+  application:
+    name: order-server
+  cloud:
+    nacos:
+      discovery:
+        server-addr: ${nacos-addr}
+  profiles:
+    include: conf

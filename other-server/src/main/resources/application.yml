@@ -1,0 +1,17 @@
+server:
+  port: 9002
+spring:
+  application:
+    name: other-server
+  rabbitmq:
+    host: ${rabbitmq-host}
+    port: 5672
+    username: guest
+    password: guest
+    virtual-host: /test-mq
+    listener:
+      simple:
+        acknowledge-mode: manual
+        prefetch: 1
+  profiles:
+    include: conf
